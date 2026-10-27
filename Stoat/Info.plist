@@ -8,10 +8,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>chat.stoat.app</string>
+			<string>com.tails1154.tailstalk2</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>stoatchat</string>
+				<string>tailstalk2</string>
 			</array>
 		</dict>
 	</array>
@@ -23,8 +23,8 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>INSendMessageIntent</string>
-		<string>chat.stoat.app.voice-call</string>
-		<string>chat.stoat.app.channel-navigation</string>
+		<string>com.tails1154.tailstalk2.voice-call</string>
+		<string>com.tails1154.tailstalk2.channel-navigation</string>
 	</array>
 	<key>RTCAppGroupIdentifier</key>
 	<string>group.chat.stoat.app</string>

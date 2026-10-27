@@ -1568,7 +1568,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stoat/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Stoat;
+				INFOPLIST_KEY_CFBundleDisplayName = "TailsTalk 2";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To communicate with other users in voice channels";
@@ -1630,7 +1630,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stoat/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Stoat;
+				INFOPLIST_KEY_CFBundleDisplayName = "TailsTalk 2";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To communicate with other users in voice channels";

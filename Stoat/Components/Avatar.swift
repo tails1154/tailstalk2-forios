@@ -50,6 +50,17 @@ struct Avatar: View {
                     clipTo: Circle()
                 )
             }
+
+            if let decoration = user.profile?.avatar_decoration,
+               let decorationURL = URL(string: decoration) {
+                LazyImage(
+                    source: .url(decorationURL),
+                    height: height,
+                    width: width,
+                    clipTo: Circle()
+                )
+                .allowsHitTesting(false)
+            }
             
             if withPresence {
                 ZStack(alignment: .center) {

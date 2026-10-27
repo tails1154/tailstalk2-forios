@@ -87,13 +87,13 @@ struct Welcome: View {
                     Spacer()
                     
                     Group {
-                        Link("Terms of Service", destination: URL(string: "https://stoat.chat/legal/terms")!)
+                        Link("Terms of Service", destination: URL(string: "https://tailstalk2.com/legal/terms")!)
                             .font(.footnote)
                             .foregroundColor(Color(white: 0.584))
-                        Link("Privacy Policy", destination: URL(string: "https://stoat.chat/legal/privacy")!)
+                        Link("Privacy Policy", destination: URL(string: "https://tailstalk2.com/legal/privacy")!)
                             .font(.footnote)
                             .foregroundColor(Color(white: 0.584))
-                        Link("Community Guidelines", destination: URL(string: "https://stoat.chat/legal/community-guidelines")!)
+                        Link("Community Guidelines", destination: URL(string: "https://tailstalk2.com/legal/community-guidelines")!)
                             .font(.footnote)
                             .foregroundColor(Color(white: 0.584))
                     }

@@ -126,6 +126,27 @@ struct HTTPClient {
     func fetchSelf() async -> Result<User, RevoltError> {
         await req(method: .get, route: "/users/@me")
     }
+
+    // TailsTalk 2 platform features.
+    func fetchTailsTalkXP(user: String) async -> Result<TailsTalkXP, RevoltError> {
+        await req(method: .get, route: "/users/\(user)/xp")
+    }
+
+    func fetchTailsTalkDecorations() async -> Result<[TailsTalkAvatarDecoration], RevoltError> {
+        await req(method: .get, route: "/users/profile-decorations")
+    }
+
+    func purchaseTailsTalkDecoration(id: String) async -> Result<EmptyResponse, RevoltError> {
+        await req(method: .post, route: "/users/profile-decorations/\(id)/purchase")
+    }
+
+    func equipTailsTalkDecoration(id: String) async -> Result<EmptyResponse, RevoltError> {
+        await req(method: .post, route: "/users/profile-decorations/\(id)/equip")
+    }
+
+    func fetchTailsTalkBoosts(server: String) async -> Result<TailsTalkBoostSummary, RevoltError> {
+        await req(method: .get, route: "/servers/\(server)/boosts")
+    }
     
     func signout() async -> Result<EmptyResponse, RevoltError> {
         await req(method: .post, route: "/auth/session/logout")

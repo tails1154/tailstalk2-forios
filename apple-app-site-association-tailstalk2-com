@@ -1,0 +1,18 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": ["SV9Y7P7XP4.chat.stoat.app"],
+                "components": [
+                    {"/": "/app"},
+                    {"/": "/login"},
+                    {"/": "/server/*"},
+                    {"/": "/channel/*"},
+                    {"/": "/friends/*"},
+                    {"/": "/invite/*"},
+                    {"/": "/gift/*"}
+                ]
+            }
+        ]
+    }
+}

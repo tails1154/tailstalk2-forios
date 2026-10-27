@@ -405,8 +405,8 @@ public class ViewState: ObservableObject {
                 autumn: RevoltFeature(enabled: true, url: "https://cdn.stoatusercontent.com"),
                 january: RevoltFeature(enabled: true, url: "https://proxy.stoatusercontent.com"),
                 livekit: LiveKitFeature(enabled: true, nodes: [])),
-            ws: "wss://events.stoat.chat",
-            app: "https://stoat.chat",
+            ws: "wss://tailstalk2.com/ws",
+            app: "https://tailstalk2.com",
             vapid: "BJto1I_OZi8hOkMfQNQJfod2osWBqcOO7eEOqFMvCfqNhqgxqOr7URnxYKTR4N6sR3sTPywfHpEsPXhrU9zfZgg="
         )
 

@@ -89,11 +89,49 @@ public struct User: Identifiable, Codable, Equatable, Hashable {
 }
 
 public struct Profile: Codable, Equatable, Hashable {
-    public init(content: String? = nil, background: File? = nil) {
+    public init(content: String? = nil, background: File? = nil, avatar_decoration: String? = nil) {
         self.content = content
         self.background = background
+        self.avatar_decoration = avatar_decoration
     }
     
     public var content: String?
     public var background: File?
+    public var avatar_decoration: String?
+}
+
+public struct TailsTalkXP: Codable, Equatable, Hashable {
+    public var xp: Int64
+    public var level: Int64
+    public var next_level_xp: Int64
+    public var current_level_xp: Int64
+}
+
+public struct TailsTalkAvatarDecoration: Codable, Equatable, Hashable, Identifiable {
+    public var id: String
+    public var name: String
+    public var asset_url: String
+    public var price_xp: Int64
+    public var enabled: Bool
+    public var owned: Bool
+    public var equipped: Bool
+}
+
+public struct TailsTalkBoost: Codable, Equatable, Hashable, Identifiable {
+    public var id: String
+    public var user_id: String
+}
+
+public struct TailsTalkBoostSummary: Codable, Equatable, Hashable {
+    public var server_id: String
+    public var boost_count: Int64
+    public var level: Int
+    public var next_level: Int?
+    public var user_boosts: [TailsTalkBoost]
+    public var available_premium_boosts: Int64
+    public var user_level: Int64
+    public var boost_cost_levels: Int64
+    public var is_premium: Bool
+    public var progress_enabled: Bool
+    public var can_manage: Bool
 }

@@ -2,7 +2,7 @@ import SwiftUI
 import Sentry
 import Types
 
-let DEFAULT_API_URL: String = "https://api.stoat.chat"
+let DEFAULT_API_URL: String = "https://tailstalk2.com/api"
 
 @main
 struct StoatApp: App {
@@ -18,7 +18,8 @@ struct StoatApp: App {
     init() {
         if !isPreview {
             SentrySDK.start { options in
-                options.dsn = "https://4049414032e74d9098a44e67779aa648@sentry.revolt.chat/7"
+                // TailsTalk 2 does not send mobile crash reports to Stoat infrastructure.
+                options.dsn = ""
                 options.tracesSampleRate = 1.0
                 options.profilesSampleRate = 1.0
                 options.attachViewHierarchy = true
