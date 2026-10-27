@@ -44,7 +44,7 @@ struct Welcome: View {
                 VStack {
                     Spacer()
                     Group {
-                        Image("wide")
+                        Image("tailstalk_icon")
                             .resizable()
                             .if(colorScheme == .light, content: { $0.colorInvert() })
                             .aspectRatio(contentMode: .fit)
@@ -58,7 +58,7 @@ struct Welcome: View {
                             .padding(.horizontal)
                             .foregroundColor((colorScheme == .light) ? Color.black : Color.white)
                         
-                        Text("Stoat is one of the best ways to stay connected with your friends and community, anywhere, anytime.")
+                        Text("TailsTalk 2 is one of the best ways to stay connected with your friends and community, anywhere, anytime.")
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 55.0)
                             .padding(.top, 10.0)

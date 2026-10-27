@@ -110,7 +110,7 @@ struct UserSheet: View {
                     Tile("Joined") { 
                         VStack(alignment: .leading) {
                             Text(createdAt(id: user.id), style: .date)
-                            Text("Stoat")
+                            Text("TailsTalk 2")
                                 .bold()
                         }
                         //.frame(maxWidth: .infinity)

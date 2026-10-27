@@ -87,7 +87,7 @@ struct Settings: View {
             }
             .listRowBackground(viewState.theme.background2)
             
-            Section("Stoat") {
+            Section("TailsTalk 2") {
                 NavigationLink {
                     BotSettings()
                 } label: {

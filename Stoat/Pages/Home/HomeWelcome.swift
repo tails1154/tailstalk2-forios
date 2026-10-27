@@ -27,7 +27,7 @@ struct HomeWelcome: View {
                     Text("Welcome to")
                         .font(.title)
                         .fontWeight(.bold)
-                    Image("wide")
+                    Image("tailstalk_icon")
                         .resizable()
                         .maybeColorInvert(color: viewState.theme.background, isDefaultImage: false, defaultIsLight: true)
                         .aspectRatio(contentMode: .fit)

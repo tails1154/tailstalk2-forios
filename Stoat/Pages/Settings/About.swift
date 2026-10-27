@@ -13,9 +13,9 @@ struct About: View {
 
     var body: some View {
         VStack {
-            Image("wide")
+            Image("tailstalk_icon")
 
-            Text("Stoat iOS")
+            Text("TailsTalk 2 for iOS")
 
             Text(Bundle.main.releaseVersionNumber!)
                 .font(.caption)
@@ -23,7 +23,7 @@ struct About: View {
             Spacer()
                 .frame(height: 30)
 
-            Text("Brought to you with ❤️ by the Stoat team.")
+            Text("Brought to you with ❤️ by the TailsTalk 2 team.")
                 .font(.footnote)
                 .foregroundStyle(.gray)
         }

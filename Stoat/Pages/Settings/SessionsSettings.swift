@@ -114,7 +114,7 @@ struct SessionView: View {
                 } else if browserName == "firefox" {
                     willSetBrowserType = Image(.firefoxLogo!)
                 } else if browserName == "revolt desktop" || browserName == "stoat desktop" {
-                    willSetBrowserType = Image(.monochromeDark!)
+                    willSetBrowserType = Image("tailstalk_icon")
                 } else {
                     willSetBrowserType = Image(systemName: "questionmark")
                     isPlatformTypeSystemImage = true
