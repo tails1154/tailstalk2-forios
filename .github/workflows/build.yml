@@ -19,7 +19,7 @@ jobs:
           -skipPackagePluginValidation \
           -skipMacroValidation \
           -sdk iphonesimulator \
-          -configuration Debug \
+          -configuration Release \
           -destination 'generic/platform=iOS Simulator' \
           -derivedDataPath build \
           CODE_SIGNING_ALLOWED=NO \
@@ -28,5 +28,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tailstalk2-ios-simulator
-          path: ${{ github.workspace }}/build/Debug-iphonesimulator/Stoat.app
+          path: ${{ github.workspace }}/build/Release-iphonesimulator/Stoat.app
           retention-days: 5
